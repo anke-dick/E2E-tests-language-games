@@ -11,6 +11,10 @@ pip3 install -r requirements.txt
 
 echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 echo "second step: check robot installation and create a reports folder / cleanup of existing one"
-mkdir -p reports
+export REPORTS_FOLDER=reports
+echo ${REPORTS_FOLDER}
+#mkdir -p ${REPORTS_FOLDER}
+rm -fR ${REPORTS_FOLDER}
 robot --version
-robot --outputdir reports .
+#echo robot --outputdir ${REPORTS_FOLDER} .
+robot --outputdir ${REPORTS_FOLDER} .
