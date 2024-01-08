@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on darwin)" generated="20240108 11:51:24.423" rpa="false" schemaversion="4">
+<suite id="s1" name="Robotframework" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework">
+<suite id="s1-s1" name="Tests" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework/tests">
+<suite id="s1-s1-s1" name="My-First-Test" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework/tests/my-first-test.robot">
+<test id="s1-s1-s1-t1" name="Test Logging" line="3">
+<kw name="Log" library="BuiltIn">
+<arg>Hallo World</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 11:51:24.448" level="INFO">Hallo World</msg>
+<status status="PASS" starttime="20240108 11:51:24.448" endtime="20240108 11:51:24.448"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Dies schreibt auf die Console.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240108 11:51:24.448" endtime="20240108 11:51:24.448"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Und diees schreibt sowohl auf die Console als auch in die report.xml</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 11:51:24.449" level="INFO">Und diees schreibt sowohl auf die Console als auch in die report.xml</msg>
+<status status="PASS" starttime="20240108 11:51:24.449" endtime="20240108 11:51:24.449"/>
+</kw>
+<status status="PASS" starttime="20240108 11:51:24.448" endtime="20240108 11:51:24.449"/>
+</test>
+<status status="PASS" starttime="20240108 11:51:24.447" endtime="20240108 11:51:24.449"/>
+</suite>
+<status status="PASS" starttime="20240108 11:51:24.446" endtime="20240108 11:51:24.449"/>
+</suite>
+<status status="PASS" starttime="20240108 11:51:24.425" endtime="20240108 11:51:24.450"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Robotframework.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="My-First-Test">Robotframework.Tests.My-First-Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
