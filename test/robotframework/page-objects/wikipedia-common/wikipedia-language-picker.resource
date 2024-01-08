@@ -51,7 +51,7 @@ _List all available languages
     Element Should Be Visible    ${xpath_language_list_item}
     ${xpath_specific_item} =    Set Variable
     ...    ${xpath_language_list_item}
-    ${num_of_lang}=    Get Element Count    ${xpath_specific_item}
+    ${num_of_lang}=    Get Element Count    ${xpath_specific_item}/a[string-length(@lang)=2]
     #datentypen &{array}  @{list}
     @{list}=    Get Webelements    ${xpath_specific_item}
     @{response_list}=    Create List
@@ -61,11 +61,11 @@ _List all available languages
         #Log    ${obj.text}    #console=yes
         #${language_name}=   Get Text    ${obj}
         #Log To Console    ${language_name}
-        Append To List    ${response_list}    ${obj.text}
+        Run Keyword If    "${obj.text}"     #.len() > 0    #${language_name}
+        ...    Append To List    ${response_list}    ${obj.text}
     END
-    #log variables
     Log many     @{response_list}
-    [Return]    @{response_list}
+    [Return]    ${response_list}
 
 #    Scroll Element Into View    ${xpath_specific_item}
 #    Click Element    ${xpath_specific_item}
@@ -76,10 +76,9 @@ Wikipedia change language to ${language_code}
 
 Wikipedia list all available languages for this page
     _Click language picker open
-    #&{result}=
-    _List all available languages
-    [Return]    Chinesisch
+    @{result}=
+    ...    _List all available languages
+    [Return]    @{result}
+    
 #<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang">
 #	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn"
-
-#Change language in wikipedia to ${language}

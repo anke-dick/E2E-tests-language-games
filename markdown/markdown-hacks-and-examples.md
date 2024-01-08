@@ -1,7 +1,11 @@
 # Markdown cheatsheet 
 ## with examples from my current private projects
 
+
 ### Links
+[github markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+[another cool markdown](https://www.markdownguide.org/extended-syntax/)
+
 
 - [my blog]()
 - some general learning resources
@@ -27,6 +31,21 @@ word [sapharchand]
 |  123  |  123 |   123   |   123  |
 |    1  |    1 |     1   |     1  |
 
+
+- :Left Aligned
+- Right Aligned:
+- :Center Aligned:
+
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
 
 ### Mermaid diagram examples
 

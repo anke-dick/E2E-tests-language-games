@@ -52,4 +52,8 @@ Dritter Testfall: Test open browser for url seb and count languages
     #Change language in wikipedia to ${lang_marathi}
     Wikipedia change language to ur
     Capture Page Screenshot    ${screenshot_name_seb_ur}
-    Wikipedia List All Available Languages For This Page
+    @{lang_list}=
+    ...    Wikipedia List All Available Languages For This Page
+    Log Many    @{lang_list}
+    ${lang_list_str}=    Set Variable    @{lang_list}
+    Log To Console    ${lang_list_str}
