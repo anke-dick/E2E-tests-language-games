@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on darwin)" generated="20240108 12:58:05.375" rpa="false" schemaversion="4">
+<suite id="s1" name="Robotframework" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework">
+<suite id="s1-s1" name="Tests" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework/tests">
+<suite id="s1-s1-s1" name="My-First-Test" source="/Users/adick/Documents/Projekte-2024/E2E-tests-language-games/test/robotframework/tests/my-first-test.robot">
+<test id="s1-s1-s1-t1" name="Test Logging" line="28">
+<kw name="Log" library="BuiltIn">
+<arg>Hallo World</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 12:58:05.400" level="INFO">Hallo World</msg>
+<status status="PASS" starttime="20240108 12:58:05.399" endtime="20240108 12:58:05.400"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Dies schreibt auf die Console.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240108 12:58:05.400" endtime="20240108 12:58:05.400"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Und dies schreibt sowohl auf die Console als auch in die report.xml</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 12:58:05.400" level="INFO">Und dies schreibt sowohl auf die Console als auch in die report.xml</msg>
+<status status="PASS" starttime="20240108 12:58:05.400" endtime="20240108 12:58:05.400"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Dies ist ein ${some_scalar_boolean} Logeintrag.</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 12:58:05.400" level="INFO">Dies ist ein True Logeintrag.</msg>
+<status status="PASS" starttime="20240108 12:58:05.400" endtime="20240108 12:58:05.400"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${some_scalar_string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240108 12:58:05.401" endtime="20240108 12:58:05.401"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>aaaaa</arg>
+<arg>bc d e f</arg>
+<arg>${3} + ${4} = ${3+4}</arg>
+<arg>usw.</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20240108 12:58:05.401" level="INFO">aaaaa</msg>
+<msg timestamp="20240108 12:58:05.401" level="INFO">bc d e f</msg>
+<msg timestamp="20240108 12:58:05.402" level="INFO">3 + 4 = 7</msg>
+<msg timestamp="20240108 12:58:05.402" level="INFO">usw.</msg>
+<status status="PASS" starttime="20240108 12:58:05.401" endtime="20240108 12:58:05.402"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${another_multiline_string}</arg>
+<arg>DEBUG</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" starttime="20240108 12:58:05.402" endtime="20240108 12:58:05.402"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${a_third_multiline_string}</arg>
+<arg>WARN</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240108 12:58:05.402" level="WARN">Teil 1|Teil 2|und nun der dritte Teil</msg>
+<status status="PASS" starttime="20240108 12:58:05.402" endtime="20240108 12:58:05.402"/>
+</kw>
+<doc>Hier kommt dann die super fancy documentation hin.
+Diese kann auch multiline sein und Variablen beinhalten,
+wie zum Beispiel die folgenden:
+- 13
+- True
+- Dies ist ein wundervoller multiline Text. Dieser Text geht hier weiter.</doc>
+<status status="PASS" starttime="20240108 12:58:05.399" endtime="20240108 12:58:05.402"/>
+</test>
+<status status="PASS" starttime="20240108 12:58:05.397" endtime="20240108 12:58:05.403"/>
+</suite>
+<status status="PASS" starttime="20240108 12:58:05.396" endtime="20240108 12:58:05.403"/>
+</suite>
+<status status="PASS" starttime="20240108 12:58:05.377" endtime="20240108 12:58:05.404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Robotframework.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="My-First-Test">Robotframework.Tests.My-First-Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240108 12:58:05.402" level="WARN">Teil 1|Teil 2|und nun der dritte Teil</msg>
+</errors>
+</robot>
