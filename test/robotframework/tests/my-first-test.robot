@@ -44,3 +44,18 @@ Test Logging
     Log    ${a_third_multiline_string}    WARN    console=yes
 
 
+#Multiline variable example
+ #  ${example_regex}=  catenate  SEPARATOR=
+ #  ...  (?m)Setting IP address to [0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\n
+ #  ...  Setting MAC address to [0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}\\n
+ #  ...  Setting IP forwarding kernel options
+ #  log  regex: '${example_regex}'
+
+ #there was another way to glue two strings together
+
+ #*** Keywords ***
+   #Go To Relative URL
+   #    [Arguments]  ${relUrl}
+   #    ${url}  Set Variable  ${SITE}${relUrl}
+   #    Log To Console  ${url}
+   #    Go To  ${url}

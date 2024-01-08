@@ -1,9 +1,0 @@
-
-#Unicode text examples in verschiedenen Sprachen,
-#vielleicht aus der yaml einlesen oder so.
-# ToDo: (nice to have)
-#url_list
-
-${{example_URL}=    https://www.google.de/?hl=de
-
-Zweiter Testfall: Test open browser for url
